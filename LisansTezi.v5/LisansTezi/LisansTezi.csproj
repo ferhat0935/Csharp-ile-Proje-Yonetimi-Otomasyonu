@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE2C2A36-89CF-464B-BCD8-1ED9CEB32BE8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LisansTezi</RootNamespace>
+    <AssemblyName>LisansTezi</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Desktop\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ana Sayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ana Sayfa.Designer.cs">
+      <DependentUpon>Ana Sayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iskisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iskisi.Designer.cs">
+      <DependentUpon>iskisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kategoriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kategoriler.Designer.cs">
+      <DependentUpon>Kategoriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kisi.Designer.cs">
+      <DependentUpon>Kisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Projedüzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projedüzenle.Designer.cs">
+      <DependentUpon>Projedüzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tezDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tezDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tezDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tezDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tezDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tezDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tezDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tezDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tezDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tezDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tezDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tezDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tezDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tezDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tezDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tezDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tezDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tezDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tezDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tezDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tezDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tezDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tezDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tezDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tezDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tezDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="İs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İs.Designer.cs">
+      <DependentUpon>İs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İspaketi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İspaketi.Designer.cs">
+      <DependentUpon>İspaketi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ana Sayfa.resx">
+      <DependentUpon>Ana Sayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iskisi.resx">
+      <DependentUpon>iskisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kategoriler.resx">
+      <DependentUpon>Kategoriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kisi.resx">
+      <DependentUpon>Kisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projedüzenle.resx">
+      <DependentUpon>Projedüzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="İs.resx">
+      <DependentUpon>İs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İspaketi.resx">
+      <DependentUpon>İspaketi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="tezDataSet.xsc">
+      <DependentUpon>tezDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tezDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tezDataSet.xss">
+      <DependentUpon>tezDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet1.xsc">
+      <DependentUpon>tezDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tezDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tezDataSet1.xss">
+      <DependentUpon>tezDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet10.xsc">
+      <DependentUpon>tezDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tezDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tezDataSet10.xss">
+      <DependentUpon>tezDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet11.xsc">
+      <DependentUpon>tezDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tezDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tezDataSet11.xss">
+      <DependentUpon>tezDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet12.xsc">
+      <DependentUpon>tezDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tezDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tezDataSet12.xss">
+      <DependentUpon>tezDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet2.xsc">
+      <DependentUpon>tezDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tezDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tezDataSet2.xss">
+      <DependentUpon>tezDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet3.xsc">
+      <DependentUpon>tezDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tezDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tezDataSet3.xss">
+      <DependentUpon>tezDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet4.xsc">
+      <DependentUpon>tezDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tezDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tezDataSet4.xss">
+      <DependentUpon>tezDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet5.xsc">
+      <DependentUpon>tezDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tezDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tezDataSet5.xss">
+      <DependentUpon>tezDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet6.xsc">
+      <DependentUpon>tezDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tezDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tezDataSet6.xss">
+      <DependentUpon>tezDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet7.xsc">
+      <DependentUpon>tezDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tezDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tezDataSet7.xss">
+      <DependentUpon>tezDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet8.xsc">
+      <DependentUpon>tezDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tezDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tezDataSet8.xss">
+      <DependentUpon>tezDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet9.xsc">
+      <DependentUpon>tezDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="tezDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tezDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tezDataSet9.xss">
+      <DependentUpon>tezDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
